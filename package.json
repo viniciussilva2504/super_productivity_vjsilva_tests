@@ -60,6 +60,8 @@
     "e2e:pwa": "npm run buildFrontend:prodWeb && npx playwright test --config e2e/playwright.pwa.config.ts --reporter=line",
     "e2e:ui": "npx playwright test --config e2e/playwright.config.ts --ui",
     "e2e:file": "npx playwright test --config e2e/playwright.config.ts --reporter=list",
+    "e2e:evidence": "node e2e/run-evidence.cjs",
+    "e2e:funcionalidades": "node e2e/run-evidence.cjs e2e/funcionalidades",
     "e2e:debug": "npx playwright test --config e2e/playwright.config.ts --debug",
     "e2e:headed": "npx playwright test --config e2e/playwright.config.ts --headed",
     "e2e:show-report": "npx playwright show-report .tmp/e2e-test-results/playwright-report",
